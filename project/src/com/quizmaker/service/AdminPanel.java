@@ -284,7 +284,7 @@ public class AdminPanel {
    * Loads questions from a CSV file.
    */
   private void loadFromCSV() throws IOException {
-    System.out.print("\nEnter CSV file path: ");
+    System.out.print("\nEnter absolute path to CSV file: ");
     String filePath = reader.readLine().trim();
 
     try {
@@ -309,7 +309,7 @@ public class AdminPanel {
    * Loads questions from a JSON file.
    */
   private void loadFromJSON() throws IOException {
-    System.out.print("\nEnter JSON file path: ");
+    System.out.print("\nEnter absolute path to JSON file: ");
     String filePath = reader.readLine().trim();
 
     try {
