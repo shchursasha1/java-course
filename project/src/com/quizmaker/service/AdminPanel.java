@@ -226,7 +226,7 @@ public class AdminPanel {
     }
 
     for (int i = 0; i < questions.size(); i++) {
-      System.out.println("\n" + i + 1 + ". " + questions.get(i));
+      System.out.println("\n" + (i + 1) + ". " + questions.get(i));
     }
   }
 
