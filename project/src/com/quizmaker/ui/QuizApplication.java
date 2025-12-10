@@ -229,6 +229,9 @@ public class QuizApplication {
     // Display results
     System.out.println("\n===== QUIZ COMPLETED =====");
     System.out.println(evaluatedQuiz.toString());
+    
+    // Display detailed analysis with correct answers
+    System.out.println("\n" + QuizEvaluator.generateAnalysisReport(evaluatedQuiz));
 
     // Offer to send results via email
     System.out.print("\nSend results to email? (y/n): ");
