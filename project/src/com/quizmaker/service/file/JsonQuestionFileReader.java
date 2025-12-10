@@ -37,7 +37,15 @@ public class JsonQuestionFileReader implements QuestionFileReader {
       }
 
       String json = jsonContent.toString().trim();
-      json = json.replaceAll("\\[\\s*", "").replaceAll("\\s*\\]", "").trim();
+      
+      // Remove only the outermost array brackets
+      if (json.startsWith("[")) {
+        json = json.substring(1);
+      }
+      if (json.endsWith("]")) {
+        json = json.substring(0, json.length() - 1);
+      }
+      json = json.trim();
 
       if (json.isEmpty()) {
         return bank;
@@ -123,14 +131,15 @@ public class JsonQuestionFileReader implements QuestionFileReader {
   private List<String> extractJsonArray(String json, String key) {
     List<String> result = new ArrayList<>();
     String pattern = "\"" + key + "\"\\s*:\\s*\\[([^\\]]*?)\\]";
-    Pattern p = Pattern.compile(pattern);
+    Pattern p = Pattern.compile(pattern, Pattern.DOTALL);
     Matcher m = p.matcher(json);
 
     if (m.find()) {
       String arrayContent = m.group(1);
-      String[] items = arrayContent.split(",");
+      // Split by comma that is followed by optional whitespace and a quote
+      String[] items = arrayContent.split("\"\\s*,\\s*\"");
       for (String item : items) {
-        item = item.replaceAll("[\"\\s]", "").trim();
+        item = item.replaceAll("\"", "").trim();
         if (!item.isEmpty()) {
           result.add(item);
         }
