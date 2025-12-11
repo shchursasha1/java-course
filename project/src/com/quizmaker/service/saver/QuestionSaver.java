@@ -10,9 +10,9 @@ import java.io.IOException;
  * closed for modification. New file formats can be added by implementing
  * this interface without changing existing code.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public interface QuestionSaver {
 

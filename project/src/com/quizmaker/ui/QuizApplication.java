@@ -21,9 +21,9 @@ import java.util.List;
  * of the quiz application including question management, quiz generation,
  * quiz taking, and result evaluation.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class QuizApplication {
 
@@ -40,7 +40,21 @@ public class QuizApplication {
   public QuizApplication() {
     this.questionBank = new QuestionBank();
     this.quizGenerator = new QuizGenerator(questionBank);
-    this.emailService = new EmailService("admin@quizmaker.com", "Quiz Administrator");
+
+    String gmailUsername = System.getenv("QUIZ_GMAIL_USERNAME");
+    String gmailAppPassword = System.getenv("QUIZ_GMAIL_APP_PASSWORD");
+
+    if (gmailUsername != null && !gmailUsername.isEmpty()
+        && gmailAppPassword != null && !gmailAppPassword.isEmpty()) {
+      this.emailService = EmailService.createGmailService(
+          gmailUsername,
+          "Quiz Administrator",
+          gmailUsername,
+          gmailAppPassword);
+    } else {
+      this.emailService = new EmailService("admin@quizmaker.com", "Quiz Administrator"); // mocked email service
+    }
+
     this.adminPanel = new AdminPanel(questionBank);
     this.reader = new BufferedReader(new InputStreamReader(System.in));
     this.completedQuizzes = new ArrayList<>();
@@ -293,7 +307,7 @@ public class QuizApplication {
     System.out.print("Select option: ");
 
     int choice = getIntInput();
-    System.out.print("Enter file path: ");
+    System.out.print("Enter the absolute file path: ");
     String filePath = reader.readLine().trim();
 
     try {

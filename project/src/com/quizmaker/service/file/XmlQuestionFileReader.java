@@ -15,9 +15,9 @@ import java.util.List;
  * NOTE: This is a simplified example. Production code should use
  * a proper XML library like DOM or SAX.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 2.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class XmlQuestionFileReader implements QuestionFileReader {
 

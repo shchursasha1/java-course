@@ -16,9 +16,9 @@ import java.util.List;
  * This class implements the QuestionLoader interface, following the Open/Closed
  * and Single Responsibility principles.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class CsvQuestionLoader implements QuestionLoader {
 

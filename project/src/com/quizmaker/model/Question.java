@@ -11,9 +11,9 @@ import java.util.List;
  * the correct answer index, and difficulty level. It supports serialization for
  * storage in files.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class Question implements Serializable {
 

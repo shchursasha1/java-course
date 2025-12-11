@@ -10,9 +10,9 @@ import java.io.IOException;
  * This follows the Open/Closed Principle - new formats can be added
  * without modifying existing code.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 2.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public interface QuestionFileReader {
 

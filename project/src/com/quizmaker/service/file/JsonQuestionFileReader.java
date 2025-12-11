@@ -16,9 +16,9 @@ import java.util.regex.Pattern;
  * Reads questions from JSON files using regex parsing.
  * Format: Array of objects with id, questionText, answers, correctAnswerIndex, category, difficulty
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 2.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class JsonQuestionFileReader implements QuestionFileReader {
 

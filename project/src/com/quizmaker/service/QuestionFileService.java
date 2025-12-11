@@ -25,9 +25,9 @@ import java.util.Map;
  * - Interface Segregation: Separate interfaces for reading and writing
  * - Dependency Inversion: Depends on abstractions (interfaces), not concrete classes
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 2.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class QuestionFileService {
 

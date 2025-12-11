@@ -34,9 +34,9 @@ import java.util.regex.Pattern;
  * &lt;/questions&gt;
  * </pre>
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class XmlQuestionLoader implements QuestionLoader {
 

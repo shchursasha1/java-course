@@ -12,9 +12,9 @@ import java.util.List;
  *
  * Writes questions to JSON files as an array of objects.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 2.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class JsonQuestionFileWriter implements QuestionFileWriter {
 

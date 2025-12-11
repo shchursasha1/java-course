@@ -14,9 +14,9 @@ import java.util.List;
  * This class provides functions to add, edit, delete, and view questions.
  * It offers both programmatic and interactive command-line interfaces.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class AdminPanel {
 

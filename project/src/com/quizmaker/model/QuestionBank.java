@@ -13,9 +13,9 @@ import java.util.stream.Collectors;
  * This class provides functionality to store, filter, and retrieve questions
  * by various criteria such as category, difficulty level, and random selection.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class QuestionBank {
 

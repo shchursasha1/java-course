@@ -10,9 +10,9 @@ import java.io.IOException;
  * Delegates all work to QuestionFileService which follows SOLID principles.
  * This class exists for convenience and maintains a simple API.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 2.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class FileManager {
 

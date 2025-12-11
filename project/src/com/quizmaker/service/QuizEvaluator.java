@@ -11,9 +11,9 @@ import java.util.List;
  * This class calculates scores, provides answer analysis, and generates
  * performance reports for completed quizzes.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class QuizEvaluator {
 

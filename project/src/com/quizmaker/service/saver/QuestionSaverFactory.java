@@ -9,9 +9,9 @@ import java.util.Map;
  * This class implements the Factory pattern and follows the Open/Closed Principle.
  * New savers can be registered without modifying the factory's core logic.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class QuestionSaverFactory {
 

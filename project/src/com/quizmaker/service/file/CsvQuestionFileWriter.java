@@ -13,9 +13,9 @@ import java.util.List;
  * Writes questions to CSV files with format:
  * id,question_text,answer1,answer2,answer3,answer4,correct_index,category,difficulty
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 2.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class CsvQuestionFileWriter implements QuestionFileWriter {
 

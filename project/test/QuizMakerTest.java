@@ -15,9 +15,9 @@ import java.util.List;
  * This test class verifies all major functionalities of the Quiz Maker system
  * including question management, quiz generation, evaluation, and file I/O.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class QuizMakerTest {
 

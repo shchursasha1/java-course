@@ -12,9 +12,9 @@ import java.util.List;
  * This class manages quiz instances, student responses, timing information,
  * and score calculation for individual quiz attempts.
  *
- * @author Developer Team
+ * @author Oleksandr Shchur
  * @version 1.0
- * @since 2025-12-10
+ * @since 28.11.2025
  */
 public class Quiz implements Serializable {
 
